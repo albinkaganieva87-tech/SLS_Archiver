@@ -7,4 +7,21 @@ Zip archiver, but it is sls. sus linked archive...
 * Langs: Win: VBS, windows PowerShell 5, Lin/MacOS: Bash
 * Created: by Sus Imposter Studios
 * Version: 1.2.0
+# Fixed bug in windiws version
+in other edition program can fall here: 
+```powershell
+catch { 
+    ф `
+    -Activity "Распаковка"  
+    -Completed `
+```
+now we fixed it:
+
+```powershell
+catch { 
+
+    Write-Progress `
+        -Activity "Распаковка" `
+        -Completed
+```
 # WE HAVE ONLY WINDOWS VERSION NOW!!! WE WILL ADD LINUX/MACOS VERSION AT THE NEXT VERSION
