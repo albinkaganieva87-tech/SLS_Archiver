@@ -24,4 +24,3 @@ catch {
         -Activity "Распаковка" `
         -Completed
 ```
-# WE HAVE ONLY WINDOWS VERSION NOW!!! WE WILL ADD LINUX/MACOS VERSION AT THE NEXT VERSION
