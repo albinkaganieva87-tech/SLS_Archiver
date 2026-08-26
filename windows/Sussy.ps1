@@ -461,16 +461,16 @@ function Extract-SLS {
         Write-Host "Файлы распакованы в:"
         Write-Host $destinationFolder -ForegroundColor Green
     }
-    catch {
+    catch { 
 
-        ф `
-            -Activity "Распаковка" `
-            -Completed
+        Write-Progress `
+        -Activity "Распаковка" `
+        -Completed
 
-        Write-Host ""
-        Write-Host "Ошибка при распаковке:" -ForegroundColor Red
+        Write-Host "" 
+        Write-Host "Ошибка при распаковке:" -ForegroundColor Red 
 
-        Write-Host $_.Exception.Message -ForegroundColor Red
+        Write-Host $_.Exception.Message -ForegroundColor Red 
     }
 }
 function Refresh-Explorer {
